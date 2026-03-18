@@ -1,0 +1,8 @@
+# skip the redundance of inputting href="/xxx.html" in navigation.html
+
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: Blog
+  link: /blog.html
