@@ -7,8 +7,7 @@ source "https://rubygems.org"
 # gem "jekyll"
 gem "github-pages"
 
-Exclude:
-- Gemfile.lock
+
 
 # Gemfile.lock: locks the current gem versions for a future bundle
 # install. Update gem versions through bundle update.
