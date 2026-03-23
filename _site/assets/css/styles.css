@@ -7,17 +7,31 @@
 body {
   box-sizing: border-box;
   width: 100%;
+  min-height: 30em;
+  padding: 2em;
   text-align: center;
   background-color: #e9e9e9;
-  box-shadow: 0 0 2px 2px #bebdbd; }
+  box-shadow: 0 0 4px 3px #bebdbd; }
+
+.practice1 {
+  display: inline-flex;
+  width: auto;
+  margin: .3em 2em auto 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  box-shadow: 2px 2px 4px 3px #65945c;
+  color: #4b7c0a; }
 
 nav {
-  display: flex;
-  text-align: center; }
+  display: inline-flex;
+  text-align: center;
+  width: calc(6em * 4);
+  margin: auto 0 5em 2em;
+  border-bottom: 3px double #bebdbd; }
 
 nav a {
-  box-sizing: content-box;
-  margin-right: 0; }
+  margin: 0 1em;
+  width: 5em; }
 
 a {
   text-decoration: none;
@@ -29,13 +43,11 @@ a:hover {
 
 .current {
   display: inline-block;
-  overflow: hidden;
-  width: 25%;
   text-decoration: none;
-  font-weight: 1000;
+  font-weight: bolder;
   color: #0e8f59; }
 
 ul {
-  margin: 0 25%;
+  margin: auto;
   list-style-position: outside;
   text-align: left; }
