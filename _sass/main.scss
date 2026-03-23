@@ -13,6 +13,16 @@ body{
     box-shadow: 0 0 2px 2px #bebdbd;
 }
 
+nav{
+    display: flex;
+    text-align: center;
+}
+
+nav a{
+    box-sizing: content-box;
+    margin-right: 0;
+}
+
 a{
     text-decoration: none;
     color: #0e8f59;
@@ -26,7 +36,7 @@ a:hover{
 .current{
     display: inline-block;
     overflow: hidden;
-    width: 100%;
+    width: 25%;
     text-decoration: none;
     font-weight: 1000;
     color: #0e8f59
@@ -34,6 +44,6 @@ a:hover{
 
 ul{
     margin: 0 25%;
-    list-style-position: inside;
+    list-style-position: outside;
     text-align: left;
 }
