@@ -15,25 +15,26 @@ body {
 header {
   display: flex;
   width: 100%;
-  text-align: left;
-  vertical-align: top; }
+  justify-content: space-between;
+  align-items: bottom;
+  text-align: left; }
 
 .practice1 {
-  display: inline-flex;
-  justify-content: flex-start;
-  width: auto;
-  margin: auto auto 2em;
+  margin: 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.5em;
+  text-align: center;
+  width: fit-content;
   box-shadow: 2px 2px 4px 3px #65945c;
   color: #4b7c0a; }
 
 nav {
-  display: inline-flex;
+  display: flex;
   justify-content: flex-end;
-  width: auto;
+  align-items: center;
+  width: fit-content;
   text-align: center;
-  margin: auto auto 2em;
+  margin: auto;
   padding: 0;
   border-bottom: 3px double #bebdbd; }
 
