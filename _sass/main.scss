@@ -54,13 +54,15 @@ nav .dropdown{
     display: none;
     box-sizing: border-box;
     width: max-content;
-    padding: auto;
+    padding-left: 0;
+    margin-left: 0;
     background-color: #ececec;
     box-shadow: 2px 2px 2px 2px #8a8888;
+    border-radius: 10px;
     list-style: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 150%;
+    left: 2.5em;
     z-index: 1000;
 }
 
