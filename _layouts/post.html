@@ -5,11 +5,11 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p>
     {{ page.date | date_to_string}}
-    {% assign author = site.authors | where: 'short_name', page.author | first %}
-    <!-- where the short_name in <author>.md matches author in <post>.md,
+    {% assign member = site.team | where: 'short_name', page.member | first %}
+    <!-- where the short_name in <member>.md matches member in <post>.md,
         return only to the first value -->
-    {% if author %}
-        - <a href="/practice1_jekyllFromScratch/{{ author.url }}">{{ author.name }}</a>
+    {% if member %}
+        - <a href="/practice1_jekyllFromScratch/{{ member.url }}">{{ member.name }}</a>
     {% endif %}
 </p>
 

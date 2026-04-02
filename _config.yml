@@ -1,5 +1,5 @@
 collections:
-  authors:
+  team:
     output: true # each author has their own page
 
 baseurl: /practice1_jekyllFromScratch # essential upon deployment
@@ -7,9 +7,9 @@ baseurl: /practice1_jekyllFromScratch # essential upon deployment
 defaults:
   - scope:
       path: ""
-      type: "authors" # name of the collection
+      type: "team" # name of the collection
     values: 
-      layout: "author" # name of the html for the particular page
+      layout: "member" # name of the html for the particular page
   - scope:
       path: ""
       type: "posts"
