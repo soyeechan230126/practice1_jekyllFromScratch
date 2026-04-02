@@ -2,10 +2,15 @@
   link: /
 - name: About
   link: /about.html
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
+- name: Tutorials
+  link: /tutorials.html
+  sublinks:
+    - name: How to start
+      link: /how_to_start.html
+    - name: Analyses & Spectra
+      link: /analyses_and_spectra.html
+- name: Team
+  link: /team.html
 - name: Contact
   link: /contact.html
 # skip the redundance of inputting href="/xxx.html" in navigation.html

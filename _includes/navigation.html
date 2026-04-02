@@ -1,5 +1,15 @@
+<!--liquid-->
 <nav>
     {% for item in site.data.navigation %}
-    <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %} class="current" {%endif%}>{{ item.name }}</a>
+    <div class="nav-bar">
+        <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %} class="current" {%endif%}>{{ item.name }}</a>
+        {% if item.sublinks %}
+            <ul class="dropdown">
+                {% for sub in item.sublinks %}
+                    <li><a href="{{ sub.link }}">{{ sub.name }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
     {% endfor %}
 </nav>

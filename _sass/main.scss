@@ -33,14 +33,37 @@ header{
     color: #4b7c0a;
 }
 
-nav{
+nav {
     display: flex;
+    list-style: none;
     justify-content: space-evenly;
     align-items: center;
     width: fit-content;
     text-align: center;
     margin: 0;
     border-bottom: 3px double #bebdbd;
+}
+
+nav .nav-bar{
+    position: relative;
+}
+
+nav .dropdown{
+    display: none;
+    box-sizing: border-box;
+    width: max-content;
+    padding: auto;
+    background-color: #ececec;
+    box-shadow: 2px 2px 2px 2px #8a8888;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .nav-bar:hover .dropdown{
+    display: block; 
 }
 
 nav a{
@@ -57,8 +80,8 @@ a{
 }
 
 a:hover{
-    font-weight: bolder;
-    color: #0b7549;
+    text-shadow: 0 .5px 3px #0a663e;
+    color: #0c794a
 }
 
 .current{
