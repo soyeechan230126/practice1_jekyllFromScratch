@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
-<h1>{{ page.name }}</h1>
-<h2>{{ page.position }}</h2>
+<head>
+    <link rel="stylesheet" href="/practice1_jekyllfromScratch/assets/css/styles.scss">
+</head>
 
-{{ content }}
+<h1 style="margin: 0">{{ page.name }}</h1>
+<h2 class="position">-- {{ page.position }} --</h2>
 
+<p class="member-intro">{{ content }}</p>
+
+{% assign filtered_posts = site.posts | where: 'member', page.short_name %}
+{% if filtered_posts.size > 0 %}
 <h2>Posts</h2>
 <ul>
-    {% assign filtered_posts = site.posts | where: 'member', page.short_name %}
     {% for post in filtered_posts %}
         <li><a href="/practice1_jekyllFromScratch/{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
+{% endif %}

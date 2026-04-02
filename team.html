@@ -4,7 +4,7 @@ title: Team
 description: Meet the team!
 ---
 <head>
-    <link rel="stylesheet" href="/practice1_jekyllFromScratch/assets/css/styles.css">
+    <link rel="stylesheet" href="/practice1_jekyllFromScratch/assets/css/styles.scss">
 </head>
 
 <h1>Team members</h1>
@@ -14,7 +14,7 @@ description: Meet the team!
     <li>
         <h2><a class="member" href="/practice1_jekyllFromScratch/{{ member.url }}">{{ member.name }}</a></h2>
         <h3> {{ member.position }} </h3>
-        <p>{{ member.content | markdownify }}</p>
+        <!--<p>{{ member.content | markdownify }}</p>-->
     </li>
     {%endfor%}
 </ul>
