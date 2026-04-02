@@ -6,7 +6,7 @@
         {% if item.sublinks %}
             <ul class="dropdown">
                 {% for sub in item.sublinks %}
-                    <li><a href="{{ sub.link }}">{{ sub.name }}</a></li>
+                    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
         {% endif %}

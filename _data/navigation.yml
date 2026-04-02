@@ -6,9 +6,9 @@
   link: /tutorials.html
   sublinks:
     - name: How to start
-      link: /how_to_start.html
+      link: /posts/how_to_start.html
     - name: Analyses & Spectra
-      link: /analyses_and_spectra.html
+      link: /posts/analyses_and_spectra.html
 - name: Team
   link: /team.html
 - name: Contact
