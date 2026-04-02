@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="/practice1_jekyllFromScratch/assets/css/styles.css">
+        <title>How to start</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://github.com/soyeechan230126/practice1_jekyllFromScratch.git" target="_blank"><h1 class="practice1">Practice 1: Jekyll from Scratch</h1></a>
+            <!--liquid-->
+<nav>
+    
+    <div class="nav-bar">
+        <a href="/practice1_jekyllFromScratch/" >Home</a>
+        
+    </div>
+    
+    <div class="nav-bar">
+        <a href="/practice1_jekyllFromScratch/about.html" >About</a>
+        
+    </div>
+    
+    <div class="nav-bar">
+        <a href="/practice1_jekyllFromScratch/tutorials.html" >Tutorials</a>
+        
+            <ul class="dropdown">
+                
+                    <li><a href="/practice1_jekyllFromScratch/2026/04/02/how_to_start.html">How to start</a></li>
+                
+                    <li><a href="/practice1_jekyllFromScratch/2026/04/02/analyses_and_spectra.html">Analyses & Spectra</a></li>
+                
+            </ul>
+        
+    </div>
+    
+    <div class="nav-bar">
+        <a href="/practice1_jekyllFromScratch/team.html" >Team</a>
+        
+    </div>
+    
+    <div class="nav-bar">
+        <a href="/practice1_jekyllFromScratch/contact.html" >Contact</a>
+        
+    </div>
+    
+</nav>
+        </header>
+        <head>
+    <link rel="stylesheet" href="/practice1_jekyllFromScratch/assets/css/styles.scss">
+</head>
+
+<h1>How to start</h1>
+<p>
+    02 Apr 2026
+    
+    <!-- where the short_name in <member>.md matches member in <post>.md,
+        return only to the first value -->
+    
+        - <a href="/practice1_jekyllFromScratch//team/soyee.html">Soyee Chan</a>
+    
+</p>
+
+<p><em>Here you can learn how to establish an ELN entry step-by-step.</em></p>
+
+<h2 id="1-open-your-eln">1. Open your ELN</h2>
+
+<p>You can choose to log in directly with a Gmail address or any other E-Mail address of your choice. Simply click 
+<img class="icon" alt="An icon of rounded bottom flask" src="/practice1_jekyllFromScratch/assets/images/ELN.png" /> to open a new tab for your ELN.</p>
+
+<h2 id="2-add-your-reaction-and-reagents">2. Add your reaction and reagents</h2>
+
+<p>This could be accomplished in two different manners: either first the drawing of the reaction equation in the chemical editor then fill in the <span class="module">Reagents</span> module, or</p>
+
+<p><strong>first data input in the</strong> <span class="module">Reagents</span> <strong>module then add the chemicals into the chemical editor</strong>.</p>
+
+<p>The latter is more recommended as it saves more time afterwards (you’ll see by the time you use the ELN more intensively.)</p>
+
+<h3 id="21-input-the-cas-number-of-your-reagents-then-add-them-to-the-chemical-editor-recommended">2.1 Input the CAS-Number of your reagents then add them to the chemical editor (recommended)</h3>
+
+<p>Simply look up the CAS-Number of your reagents and target product on <a href="https://gestis.dguv.de/search">GESTIS</a> (in German) or on <a href="https://scifinder-n.cas.org/">CAS Sci Finder</a> (in English). Paste the CAS-Number onto a cell in the column <span class="field">code</span> and press Enter. In the pop-up window click once onto the chemical of choice. Usually fields in <span class="field">Name</span>, <span class="field">mf</span> (molecular formula), <span class="field">mw</span> (molecular weight) and <span class="field">density</span> would be automatically filled up. Nevertheless for some molecules, of which relatively few literatures are currently available, it might require manual input of the data. 
+<br />
+To add the required chemicals to the chemical editor simply click onto the 
+<span class="icon"><svg style="margin: 0;" width="20" height="20" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"><polygon points="150,10 280,85 280,215 150,290 20,215 20,85" fill="none" stroke="#000" stroke-width="10" stroke-linejoin="round"></polygon></svg></span> 
+icon on the right end of your chemical of choice. Drag your starting materials to the left side of the reaction arrow and products to the right side. Then click <img class="icon" alt="the second icon of the left side in the toolbar of the chemical editor" src="/practice1_jekyllFromScratch/assets/images/clean_up.png" /> to clean up your reaction equation.</p>
+
+<h3 id="22-calculation-of-the-amounts-of-reagents-required-ansatztberechnung">2.2 Calculation of the amounts of reagents required (<em>Ansatztberechnung</em>)</h3>
+<p><em>Please be aware the following instructions are given based on your OC2 Practical only. There is actually more room to play around with the ELN functions.</em>
+In the column <span class="field">mmoles</span> put in the number of moles of the reagents and starting materials according to your <em>Anleitung</em>. Cells in <span class="field">equiv</span> as well as <span class="field">g</span> and <span class="field">ml</span> should be automatically updated. If not, check if the chemical is in solid state under standard conditions thus no available information for density. Manual input is always possible.</p>
+
+<p>Next make sure your have the “Linked” checkbox on the right side checked. Fill in the desired yielding for your product (aka in <span class="field">g</span> 10 for liquid or 5 for solid compounds). The amount required according to the equation in the chemical editor would then be automatically updated.</p>
+
+<h3 id="23-ghs-pictograms-h--and-p-statements">2.3 GHS Pictograms, H- and P-Statements</h3>
+<p>In the <span class="module">Reagents</span> it is possible to automatically generate the GHS Pictograms of the chemicals listed and furthermore retrieve their H- and P-Statements accordingly without manual searches.</p>
+
+<p>First click onto the
+<span class="hazard"><svg style="margin: 0; vertical-align: middle;" width="30" height="30" viewBox="0 0 680 600" xmlns="http://www.w3.org/2000/svg"><polygon points="340,60 560,480 120,480" fill="none" stroke="#222" stroke-width="20" stroke-linejoin="round"></polygon><rect x="327" y="200" width="26" height="150" rx="6" fill="#222"></rect><circle cx="340" cy="410" r="18" fill="#222"></circle></svg></span> 
+in the header row to activate the feature. Once the feature is activated the 
+<span class="icon"><svg style="margin: 0; vertical-align: middle;" width="30" height="30" viewBox="0 0 680 600" xmlns="http://www.w3.org/2000/svg"><polygon points="340,60 560,480 120,480" fill="none" stroke="#222" stroke-width="20" stroke-linejoin="round"></polygon><rect x="327" y="200" width="26" height="150" rx="6" fill="#222"></rect><circle cx="340" cy="410" r="18" fill="#222"></circle></svg></span> 
+would appear in each of the rows of the chemicals. Click onto one to generate the GHS Pictograms which are shown in the module.</p>
+
+<p>To browse the H- and P-Statements click onto the <span class="icon">i</span> next to the pictograms.</p>
+
+<video autoplay="" muted="" loop="" playsinline="">
+    <source src="/practice1_jekyllFromScratch/assets/videoclips/2026-04-01 11-48-47.mp4" type="video/mp4" />
+</video>
+
+
+    </body>
+</html>
